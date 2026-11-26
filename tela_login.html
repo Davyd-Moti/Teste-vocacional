@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro | Escolha-tech</title>
+
+    <link rel="stylesheet" href="tela_login.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- LADO ESQUERDO -->
+        <section class="lado-esquerdo">
+
+            <div class="conteudo-esquerdo">
+
+                <div class="marca">
+                    <div class="marca-icone">E</div>
+                    <span>Escolha-tech</span>
+                </div>
+
+                <div class="apresentacao">
+
+                    <span class="etiqueta">Seu futuro começa aqui</span>
+
+                    <h1>
+                        Escolha bem<br>
+                        <span>o seu futuro.</span>
+                    </h1>
+
+                    <p>
+                        Explore ferramentas que ajudam você a desenvolver
+                        suas habilidades, descobrir oportunidades e
+                        construir seu futuro na tecnologia.
+                    </p>
+
+                </div>
+
+                <!-- BENEFÍCIOS -->
+                <div class="beneficios">
+
+                    <div class="beneficio">
+                        <div class="beneficio-icone">✦</div>
+                        <div>
+                            <strong>Teste vocacional</strong>
+                            <p>Descubra suas áreas de afinidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <div class="beneficio-icone">⌑</div>
+                        <div>
+                            <strong>Segurança</strong>
+                            <p>Trabalhe com mais segurança em seus projetos.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <div class="beneficio-icone">⌘</div>
+                        <div>
+                            <strong>Revisão de código</strong>
+                            <p>Melhore a qualidade dos seus códigos.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <div class="beneficio-icone">⚡</div>
+                        <div>
+                            <strong>Fluxos automatizados</strong>
+                            <p>Economize tempo automatizando tarefas.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <div class="beneficio-icone">◎</div>
+                        <div>
+                            <strong>Comunidade</strong>
+                            <p>Conecte-se e compartilhe conhecimentos.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="texto-final-esquerdo">
+                    Tecnologia, conhecimento e oportunidades
+                    para transformar o seu futuro.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LADO DIREITO -->
+        <section class="lado-direito">
+
+            <div class="login">
+
+                <div class="cabecalho-login">
+
+                    <span class="etiqueta-login">
+                        CRIE SUA CONTA
+                    </span>
+
+                    <h2>Comece sua jornada</h2>
+
+                    <p>
+                        Preencha seus dados para acessar a plataforma.
+                    </p>
+
+                </div>
+
+                <!-- GOOGLE -->
+                <button class="botao-social" type="button">
+
+                    <span class="google-icone">G</span>
+                    Continuar com Google
+
+                </button>
+
+                <div class="ou">
+                    <span></span>
+                    <p>ou cadastre-se com e-mail</p>
+                    <span></span>
+                </div>
+
+                <!-- FORMULÁRIO -->
+                <form id="formCadastro">
+
+                    <div class="campo">
+
+                        <label for="email">E-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seuemail@exemplo.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="campo">
+
+                        <div class="label-senha">
+                            <label for="senha">Senha</label>
+
+                            <button
+                                type="button"
+                                class="esqueci-senha"
+                                id="abrirRecuperacao"
+                            >
+                                Esqueci minha senha?
+                            </button>
+                        </div>
+
+                        <div class="campo-senha">
+
+                            <input
+                                type="password"
+                                id="senha"
+                                name="senha"
+                                placeholder="Crie uma senha"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="mostrar-senha"
+                                id="mostrarSenha"
+                                aria-label="Mostrar senha"
+                            >
+                                ◉
+                            </button>
+
+                        </div>
+
+                        <small class="ajuda-senha">
+                            A senha deve possuir pelo menos 8 caracteres.
+                        </small>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="pais">País / Região</label>
+
+                        <select id="pais" name="pais">
+
+                            <option value="Brasil">Brasil</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Argentina">Argentina</option>
+
+                        </select>
+
+                    </div>
+
+                    <button class="criar-conta" type="submit">
+                        Criar conta
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+                <!-- LOGIN -->
+                <p class="ja-cadastrado">
+                    Já possui uma conta?
+
+                    <a href="tela_login2.html">
+                        Faça login
+                    </a>
+                </p>
+
+                <!-- TERMOS -->
+                <p class="termos">
+                    Ao criar uma conta, você concorda com os
+                    <a href="#">Termos de Serviço</a>
+                    e a
+                    <a href="#">Política de Privacidade</a>.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL DE RECUPERAÇÃO DE SENHA -->
+    <div class="modal-overlay" id="modalRecuperacao" hidden>
+
+        <div
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="tituloRecuperacao"
+        >
+
+            <button
+                type="button"
+                class="fechar-modal"
+                id="fecharModal"
+                aria-label="Fechar"
+            >
+                ×
+            </button>
+
+            <div class="modal-icone">
+                ✉
+            </div>
+
+            <h2 id="tituloRecuperacao">
+                Esqueceu sua senha?
+            </h2>
+
+            <p class="descricao-modal">
+                Não se preocupe! Informe seu e-mail e enviaremos
+                instruções para recuperar o acesso à sua conta.
+            </p>
+
+            <form id="formRecuperacao">
+
+                <div class="campo">
+
+                    <label for="emailRecuperacao">
+                        E-mail cadastrado
+                    </label>
+
+                    <input
+                        type="email"
+                        id="emailRecuperacao"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+
+                </div>
+
+                <button class="botao-recuperar" type="submit">
+                    Solicitar recuperação
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <div
+                class="mensagem-recuperacao"
+                id="mensagemRecuperacao"
+                role="status"
+                hidden
+            ></div>
+
+            <button
+                type="button"
+                class="voltar-login"
+                id="voltarLogin"
+            >
+                ← Voltar para o cadastro
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="tela_login.js"></script>
+
+</body>
+</html>

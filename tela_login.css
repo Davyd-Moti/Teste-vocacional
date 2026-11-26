@@ -1,0 +1,1122 @@
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f6;
+    color: #082B49;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+
+/* =========================================
+   CONTAINER PRINCIPAL
+========================================= */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   LADO ESQUERDO
+========================================= */
+
+.lado-esquerdo {
+    width: 48%;
+
+    background: linear-gradient(
+        145deg,
+        #082B49,
+        #10476e,
+        #1769aa
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* DECORAÇÃO DE FUNDO */
+
+.lado-esquerdo::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+
+    top: -120px;
+    right: -120px;
+}
+
+.lado-esquerdo::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+
+    bottom: -100px;
+    left: -100px;
+}
+
+.conteudo-esquerdo {
+    max-width: 500px;
+    width: 100%;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   MARCA
+========================================= */
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 55px;
+}
+
+.marca-icone {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    color: #082B49;
+
+    border-radius: 12px;
+
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.marca span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   APRESENTAÇÃO
+========================================= */
+
+.etiqueta {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.apresentacao h1 {
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.apresentacao h1 span {
+    color: #a9d8ff;
+}
+
+.apresentacao > p {
+    color: #d9e8f5;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    max-width: 440px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 13px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    transition: 0.25s;
+}
+
+.beneficio:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(5px);
+}
+
+.beneficio-icone {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    border-radius: 10px;
+
+    font-size: 20px;
+}
+
+.beneficio strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 15px;
+}
+
+.beneficio p {
+    color: #d0e1ef;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   TEXTO FINAL
+========================================= */
+
+.texto-final-esquerdo {
+    color: #c3d9eb;
+
+    margin-top: 35px;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   LADO DIREITO
+========================================= */
+
+.lado-direito {
+    width: 52%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 30px;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.login {
+    width: 100%;
+    max-width: 460px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 40px rgba(8, 43, 73, 0.08);
+
+    border: 1px solid #e2e8f0;
+
+    animation: aparecer 0.5s ease;
+}
+
+
+/* =========================================
+   CABEÇALHO DO CADASTRO
+========================================= */
+
+.etiqueta-login {
+    color: #1769aa;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.cabecalho-login h2 {
+    color: #082B49;
+
+    font-size: 30px;
+
+    margin: 12px 0;
+}
+
+.cabecalho-login p {
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   BOTÃO GOOGLE
+========================================= */
+
+.botao-social {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    background: white;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    padding: 13px;
+
+    color: #334155;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.botao-social:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+}
+
+.google-icone {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4285F4;
+}
+
+
+/* =========================================
+   DIVISOR
+========================================= */
+
+.ou {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 25px 0;
+}
+
+.ou span {
+    height: 1px;
+    flex: 1;
+
+    background: #e2e8f0;
+}
+
+.ou p {
+    color: #94a3b8;
+
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    color: #082B49;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    color: #082B49;
+
+    outline: none;
+
+    transition: 0.25s;
+}
+
+.campo input::placeholder {
+    color: #94a3b8;
+}
+
+.campo input:focus,
+.campo select:focus {
+    background: white;
+
+    border-color: #1769aa;
+
+    box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.12);
+}
+
+
+/* =========================================
+   SENHA
+========================================= */
+
+.label-senha {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.label-senha label {
+    margin-bottom: 9px;
+}
+
+.esqueci-senha {
+    background: none;
+    border: none;
+
+    color: #1769aa;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 9px;
+
+    transition: 0.2s;
+}
+
+.esqueci-senha:hover {
+    color: #082B49;
+    text-decoration: underline;
+}
+
+.campo-senha {
+    position: relative;
+}
+
+.campo-senha input {
+    padding-right: 50px;
+}
+
+.mostrar-senha {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    color: #64748b;
+
+    font-size: 18px;
+    padding: 5px;
+}
+
+.mostrar-senha:hover {
+    color: #082B49;
+}
+
+.ajuda-senha {
+    display: block;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   BOTÃO CRIAR CONTA
+========================================= */
+
+.criar-conta {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    background: #082B49;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.criar-conta span {
+    font-size: 20px;
+}
+
+.criar-conta:hover {
+    background: #1769aa;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(8, 43, 73, 0.15);
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.ja-cadastrado {
+    color: #64748b;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-top: 25px;
+}
+
+.ja-cadastrado a {
+    color: #1769aa;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ja-cadastrado a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   TERMOS
+========================================= */
+
+.termos {
+    color: #94a3b8;
+
+    text-align: center;
+
+    font-size: 11px;
+    line-height: 1.7;
+
+    margin-top: 22px;
+}
+
+.termos a {
+    color: #64748b;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MODAL DE RECUPERAÇÃO
+========================================= */
+
+.modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(8, 43, 73, 0.65);
+
+    backdrop-filter: blur(5px);
+
+    animation: aparecer 0.25s ease;
+}
+
+.modal-overlay[hidden] {
+    display: none;
+}
+
+.modal {
+    width: 100%;
+    max-width: 430px;
+
+    position: relative;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+
+    animation: subir 0.3s ease;
+
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.fechar-modal {
+    position: absolute;
+
+    right: 18px;
+    top: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background: #f1f5f9;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+    color: #64748b;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.fechar-modal:hover {
+    background: #e2e8f0;
+    color: #082B49;
+}
+
+.modal-icone {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf2f8;
+    color: #1769aa;
+
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    margin-bottom: 22px;
+}
+
+.modal h2 {
+    color: #082B49;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.descricao-modal {
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.botao-recuperar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    background: #082B49;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.botao-recuperar:hover {
+    background: #1769aa;
+    transform: translateY(-1px);
+}
+
+.botao-recuperar span {
+    font-size: 18px;
+}
+
+.voltar-login {
+    display: block;
+
+    margin: 22px auto 0;
+
+    background: none;
+    border: none;
+
+    color: #1769aa;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.voltar-login:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MENSAGEM DE RECUPERAÇÃO
+========================================= */
+
+.mensagem-recuperacao {
+    padding: 14px;
+
+    margin-top: 18px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.mensagem-recuperacao[hidden] {
+    display: none;
+}
+
+.mensagem-recuperacao.sucesso {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+}
+
+.mensagem-recuperacao.erro {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+}
+
+
+/* =========================================
+   ANIMAÇÕES
+========================================= */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 950px) {
+
+    .lado-esquerdo {
+        width: 43%;
+        padding: 35px;
+    }
+
+    .lado-direito {
+        width: 57%;
+        padding: 25px;
+    }
+
+    .login {
+        padding: 30px;
+    }
+
+    .apresentacao h1 {
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES E TELAS MENORES
+========================================= */
+
+@media (max-width: 750px) {
+
+    /* ORGANIZAÇÃO PRINCIPAL */
+
+    .container {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* APRESENTAÇÃO NO TOPO */
+
+    .lado-esquerdo {
+        width: 100%;
+
+        padding: 35px 25px;
+
+        align-items: flex-start;
+    }
+
+    .conteudo-esquerdo {
+        max-width: 550px;
+    }
+
+    .marca {
+        margin-bottom: 30px;
+    }
+
+    .apresentacao h1 {
+        font-size: 36px;
+    }
+
+    .apresentacao > p {
+        margin-bottom: 25px;
+    }
+
+    /* BENEFÍCIOS */
+
+    .beneficios {
+        gap: 10px;
+    }
+
+    .beneficio {
+        padding: 10px;
+    }
+
+    .texto-final-esquerdo {
+        margin-top: 25px;
+    }
+
+    /* FORMULÁRIO ABAIXO */
+
+    .lado-direito {
+        width: 100%;
+
+        padding: 30px 20px;
+
+        align-items: flex-start;
+    }
+
+    .login {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 450px) {
+
+    .lado-esquerdo {
+        padding: 28px 20px;
+    }
+
+    .marca {
+        margin-bottom: 25px;
+    }
+
+    .marca-icone {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .marca span {
+        font-size: 18px;
+    }
+
+    .etiqueta {
+        font-size: 10px;
+        padding: 7px 11px;
+    }
+
+    .apresentacao h1 {
+        font-size: 32px;
+    }
+
+    .apresentacao > p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .beneficio {
+        gap: 10px;
+    }
+
+    .beneficio-icone {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+
+    .beneficio strong {
+        font-size: 13px;
+    }
+
+    .beneficio p {
+        font-size: 12px;
+    }
+
+    .texto-final-esquerdo {
+        font-size: 12px;
+    }
+
+    /* FORMULÁRIO */
+
+    .lado-direito {
+        padding: 25px 14px;
+    }
+
+    .login {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .cabecalho-login h2 {
+        font-size: 25px;
+    }
+
+    .cabecalho-login p {
+        font-size: 13px;
+    }
+
+    .label-senha {
+        align-items: flex-start;
+    }
+
+    .esqueci-senha {
+        font-size: 11px;
+    }
+
+    .ou {
+        gap: 8px;
+    }
+
+    .ou p {
+        font-size: 10px;
+    }
+
+    .campo input,
+    .campo select {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .criar-conta {
+        padding: 14px;
+    }
+
+    .ja-cadastrado {
+        font-size: 13px;
+    }
+
+    .termos {
+        font-size: 10px;
+    }
+
+    /* MODAL */
+
+    .modal-overlay {
+        padding: 12px;
+    }
+
+    .modal {
+        padding: 28px 22px;
+        border-radius: 15px;
+    }
+
+    .modal h2 {
+        font-size: 22px;
+    }
+
+    .descricao-modal {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES MUITO ESTREITOS
+========================================= */
+
+@media (max-width: 350px) {
+
+    .lado-esquerdo {
+        padding: 25px 15px;
+    }
+
+    .apresentacao h1 {
+        font-size: 28px;
+    }
+
+    .login {
+        padding: 22px 15px;
+    }
+
+    .label-senha {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .label-senha label {
+        margin-bottom: 5px;
+    }
+
+    .esqueci-senha {
+        margin-bottom: 10px;
+    }
+
+    .ou p {
+        white-space: normal;
+        text-align: center;
+    }
+
+}

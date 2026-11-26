@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escolha-tech</title>
+
+    <link rel="stylesheet" href="projeto1.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="header-top">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <img
+                    src="Logo EscolhaTec — versão formal.png"
+                    alt="Logo Escolha-tech"
+                >
+            </div>
+
+
+            <!-- PESQUISA CONECTADA AO GOOGLE -->
+            <form
+                class="search"
+                action="https://www.google.com/search"
+                method="GET"
+                target="_blank"
+            >
+
+                <input
+                    type="text"
+                    name="q"
+                    id="campoPesquisa"
+                    placeholder="Buscar"
+                    list="sugestoesPesquisa"
+                    autocomplete="off"
+                    aria-label="Pesquisar no Google"
+                    required
+                >
+
+                <!-- SUGESTÕES DE PESQUISA -->
+                <datalist id="sugestoesPesquisa">
+
+                    <option value="Cursos de programação">
+                    <option value="Profissões de tecnologia">
+                    <option value="Como escolher uma profissão">
+                    <option value="Mercado de trabalho em TI">
+                    <option value="Teste vocacional">
+                    <option value="Faculdades de tecnologia">
+                    <option value="Desenvolvimento de sistemas">
+                    <option value="Carreira em programação">
+                    <option value="Salário de profissionais de TI">
+                    <option value="Áreas da tecnologia">
+
+                </datalist>
+
+                <button type="submit" aria-label="Pesquisar">
+                    🔍
+                </button>
+
+            </form>
+
+
+            <!-- LOGIN -->
+            <a href="tela_login2.html" class="login">
+                Login
+            </a>
+
+
+            <!-- CADASTRO -->
+            <a href="tela_login.html" class="Cadastro">
+                Cadastro
+            </a>
+
+        </div>
+
+
+        <!-- NAVEGAÇÃO -->
+        <nav class="navbar">
+
+            <a href="#inicio">Início</a>
+
+            <a href="#teste-vocacional">Teste vocacional</a>
+
+            <a href="#profissoes">Profissões</a>
+
+            <a href="#sobre-nos">Sobre nós</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- INÍCIO -->
+        <section class="conteudo" id="inicio">
+
+            <h1>Bem-vindo ao Escolha-tech!</h1>
+
+            <p>
+                Descubra novas possibilidades e encontre
+                caminhos para seu futuro profissional.
+            </p>
+
+        </section>
+
+
+        <!-- TESTE VOCACIONAL -->
+        <section
+            class="secao fundo-branco"
+            id="teste-vocacional"
+        >
+
+            <h1>Teste vocacional</h1>
+
+            <p>
+                Descubra quais áreas profissionais combinam
+                com seus interesses, habilidades e características.
+            </p>
+
+            <a
+                href="Teste-vocacional.html"
+                class="botao-teste"
+            >
+                Começar teste
+            </a>
+
+        </section>
+
+
+        <!-- PROFISSÕES -->
+        <section
+            class="secao fundo-transparente"
+            id="profissoes"
+        >
+
+            <h1>Profissões</h1>
+
+            <p>
+                Conheça diferentes profissões, suas características,
+                áreas de atuação e oportunidades no mercado de trabalho.
+            </p>
+
+        </section>
+
+
+        <!-- SOBRE NÓS -->
+        <section
+            class="secao fundo-branco"
+            id="sobre-nos"
+        >
+
+            <h1>Sobre nós</h1>
+
+            <p class="descricao-sobre">
+                Conheça um pouco mais sobre o projeto Escolha-tech.
+            </p>
+
+
+            <!-- COLUNAS -->
+            <div class="container-colunas">
+
+
+                <!-- PRIMEIRA COLUNA -->
+                <div class="coluna">
+
+                    <h2>Quem somos?</h2>
+
+                    <p>
+                        Somos um projeto desenvolvido para auxiliar
+                        estudantes na descoberta de suas possibilidades
+                        profissionais.
+                    </p>
+
+                </div>
+
+
+                <!-- SEGUNDA COLUNA -->
+                <div class="coluna">
+
+                    <h2>Nosso objetivo</h2>
+
+                    <p>
+                        Nosso objetivo é oferecer informações e
+                        ferramentas que ajudem os estudantes a
+                        conhecer diferentes caminhos profissionais.
+                    </p>
+
+                </div>
+
+
+                <!-- TERCEIRA COLUNA -->
+                <div class="coluna">
+
+                    <h2>Nossa missão</h2>
+
+                    <p>
+                        Incentivar o autoconhecimento e contribuir
+                        para escolhas profissionais mais conscientes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Escolha-tech - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
